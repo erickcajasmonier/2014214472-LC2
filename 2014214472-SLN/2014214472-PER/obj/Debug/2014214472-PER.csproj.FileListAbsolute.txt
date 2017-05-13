@@ -1,0 +1,14 @@
+C:\Users\Cajas\Documents\Visual Studio 2012\Projects\2014214472-SLN\2014214472-PER\bin\Debug\2014214472-PER.dll
+C:\Users\Cajas\Documents\Visual Studio 2012\Projects\2014214472-SLN\2014214472-PER\bin\Debug\2014214472-PER.pdb
+C:\Users\Cajas\Documents\Visual Studio 2012\Projects\2014214472-SLN\2014214472-PER\bin\Debug\2014214472-ENT.dll
+C:\Users\Cajas\Documents\Visual Studio 2012\Projects\2014214472-SLN\2014214472-PER\bin\Debug\2014214472-ENT.pdb
+C:\Users\Cajas\Documents\Visual Studio 2012\Projects\2014214472-SLN\2014214472-PER\obj\Debug\2014214472-PER.csprojResolveAssemblyReference.cache
+C:\Users\Cajas\Documents\Visual Studio 2012\Projects\2014214472-SLN\2014214472-PER\obj\Debug\2014214472-PER.dll
+C:\Users\Cajas\Documents\Visual Studio 2012\Projects\2014214472-SLN\2014214472-PER\obj\Debug\2014214472-PER.pdb
+C:\Users\Cajas\Documents\Visual Studio 2012\Projects\2014214472-SLN\2014214472-PER\bin\Debug\2014214472-PER.dll.config
+C:\Users\Cajas\Documents\Visual Studio 2012\Projects\2014214472-SLN\2014214472-PER\bin\Debug\EntityFramework.dll
+C:\Users\Cajas\Documents\Visual Studio 2012\Projects\2014214472-SLN\2014214472-PER\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Cajas\Documents\Visual Studio 2012\Projects\2014214472-SLN\2014214472-PER\bin\Debug\EntityFramework.xml
+C:\Users\Cajas\Documents\Visual Studio 2012\Projects\2014214472-SLN\2014214472-PER\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Cajas\Documents\Visual Studio 2012\Projects\2014214472-SLN\2014214472-PER\obj\Debug\_2014214472_PER.Migrations.InitialModel.resources
+C:\Users\Cajas\Documents\Visual Studio 2012\Projects\2014214472-SLN\2014214472-PER\obj\Debug\2014214472-PER.csproj.GenerateResource.Cache
