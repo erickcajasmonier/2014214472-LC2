@@ -1,0 +1,159 @@
+﻿@model IEnumerable<_2014214472_ENT.Bus>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Buses</h2>
+
+<p>
+    @Html.ActionLink("Create new", "Create")
+</p>
+<table id="tbl_bus" class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>N° de Serie Asiento</th>
+            <th>Ensambladora</th>
+            <th>N° de Serie Llanta</th>
+            <th>N° de Serie Parabrisa</th>
+            <th>DNI</th>
+            <th>N° de Serie Volante</th>
+            <th>N° de Serie Motor</th>
+            <th>N° de Serie Chasis</th>
+            <th>Tipo Carro</th>
+            <th>Tipo Bus</th>
+            <th>Editar</th>
+            <th>Detalles</th>
+            <th>Eliminar</th>
+
+        </tr>
+    </thead>
+
+    <tbody></tbody>
+
+    @*<tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Asiento.NumSerieAsiento)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Ensambladora._Ensambladora)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Llanta.NumSerie)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Parabrisas.NumSerie)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Propietario.DNI)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Volante.NumSerie)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NumSerieMotor)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NumSerieChasis)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TipoCarro)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TipoBus)
+                </th>
+                <th></th>
+            </tr>
+
+        @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Asiento.NumSerieAsiento)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ensambladora._Ensambladora)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Llanta.NumSerie)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Parabrisas.NumSerie)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Propietario.DNI)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Volante.NumSerie)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NumSerieMotor)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NumSerieChasis)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TipoCarro)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TipoBus)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id=item.CarroId }) |
+                    @Html.ActionLink("Details", "Details", new { id=item.CarroId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id=item.CarroId })
+                </td>
+            </tr>
+        }*@
+</table>
+
+@section scripts
+{
+    <script>
+        $(document)
+            .ready(function () {
+               var table = $("#tbl_bus")
+                    .DataTable({
+                ajax: {
+                    url: "/api/Buses",
+                    dataSrc:""
+                },
+                columns: [
+                    { data: "Asiento.NumSerieAsiento" },
+                    { data: "Ensambladora._Ensambladora" },
+                    { data: "Llanta.NumSerie" },
+                    { data: "Parabrisas.NumSerie" },
+                    { data: "Propietario.DNI" },
+                    { data: "Volante.NumSerie" },
+                    { data: "NumSerieMotor" },
+                    { data: "NumSerieChasis" },
+                    { data: "TipoCarro" },
+                    { data: "TipoBus" },
+
+                    {
+                        data: "CarroId",
+                        render: function (data, type, bus) {
+                            return "<a href='/Buses/Edit/" + data + "'>Actualizar</a>";
+                        }
+                    },
+                    {
+                        data: "CarroId",
+                        render: function (data, type, bus) {
+                            return "<a href='/Buses/details/" + data + "'>Detalles</a>";
+                        }
+                    },
+                    {
+                        data: "CarroId",
+                        render: function (data) {
+                            return "<a class='btn btn-primary' href='/Buses/Delete/" + data + "'>Borrar</a>";
+                        }
+                    },
+
+                ]
+
+            });
+        });
+    </script>
+}
+
+
